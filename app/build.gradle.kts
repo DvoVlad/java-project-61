@@ -26,13 +26,15 @@ tasks.test {
 }
 
 spotless {
-    // Настройки для Java
     java {
-        target("src/**/*.java")
-        googleJavaFormat() // использование Google Java Format
-        // или eclipse(), palantirJavaFormat()
+        importOrder()
         removeUnusedImports()
-        trimTrailingWhitespace()
-        endWithNewline()
+        googleJavaFormat().aosp()
+        formatAnnotations()
+        indentWithSpaces(4)
     }
+}
+
+tasks.getByName("run", JavaExec::class) {
+    standardInput = System.`in`
 }
