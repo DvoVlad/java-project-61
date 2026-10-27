@@ -9,6 +9,7 @@ public class App {
         System.out.println("Please enter the game number and press Enter.");
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
+        System.out.println("3 - Calc");
         System.out.println("0 - Exit");
         Scanner scanner = new Scanner(System.in);
         String choice = scanner.nextLine();
@@ -18,6 +19,9 @@ public class App {
                 break;
             case "2":
                 Even.start();
+                break;
+            case "3":
+                Calc.start();
                 break;
             case "0":
                 break;
