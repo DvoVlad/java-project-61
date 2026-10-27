@@ -1,5 +1,5 @@
 # Игры разума (Java)
-
+[Ссылка на запись игры про четность](https://asciinema.org/a/TnQquDGKBaVcPZWO)
 [![hexlet-check](https://github.com/DvoVlad/java-project-61/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/DvoVlad/java-project-61/actions)
 
 Погрузитесь в экосистему Java, научитесь настраивать рабочее окружение. Подружитесь с Spotless (линтером и форматтером кода) и фреймворком для автоматизации сборки проектов Gradle. Поймёте, чем git отличается от GitHub, поработаете с внешними репозиториями. Получите опыт построения архитектуры полноценного приложения и написания чистого кода.
