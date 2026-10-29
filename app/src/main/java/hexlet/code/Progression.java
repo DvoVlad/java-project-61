@@ -48,7 +48,7 @@ public class Progression {
             } else {
                 question.append(String.valueOf(progression[i]));
             }
-            if(i != progression.length - 1) {
+            if (i != progression.length - 1) {
                 question.append(" ");
             }
         }
@@ -68,7 +68,6 @@ public class Progression {
         int[] result = new int[length];
         for (int i = 0; i < length; i++) {
             result[i] = start + i * step;
-
         }
         return result;
     }

@@ -3,6 +3,9 @@ package hexlet.code;
 import java.util.Scanner;
 
 public class Even {
+    private static String correctResult = "";
+    private static String answer = "";
+
     public static void start() {
         System.out.println("Welcome to the Brain Games!");
         System.out.println("May I have your name?");
@@ -22,7 +25,13 @@ public class Even {
         if (score == 3) {
             System.out.println("Congratulations," + name);
         } else {
-            System.out.println("You lose," + name);
+            System.out.println(
+                    "'"
+                            + Even.answer
+                            + "' is wrong answer ;(. Correct answer was '"
+                            + Even.correctResult
+                            + "'.");
+            System.out.println("Let's try again, " + name);
         }
     }
 
@@ -30,15 +39,10 @@ public class Even {
         int number = (int) (Math.random() * 100);
         System.out.println("Question: " + number);
         Scanner scanner = new Scanner(System.in);
-        String answer = scanner.nextLine();
+        Even.answer = scanner.nextLine();
+        Even.correctResult = isEven(number) ? "yes" : "no";
         System.out.println("Your answer: " + answer);
-        if (isEven(number) && answer.equals("yes")) {
-            return true;
-        } else if (!isEven(number) && answer.equals("no")) {
-            return true;
-        } else {
-            return false;
-        }
+        return Even.correctResult.equals(Even.answer);
     }
 
     public static boolean isEven(int number) {
