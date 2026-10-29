@@ -3,6 +3,7 @@
 [Ссылка на запись игры про счет](https://asciinema.org/a/SlW6QcUE3HATuF5i)
 [Ссылка на запись игры про НОД](https://asciinema.org/a/r29DXijRvqfvcren)
 [Ссылка на запись игры про прогрессию](https://asciinema.org/a/f2aGkI4nSB3PthI7)
+[Ссылка на запись игры про простое число](https://asciinema.org/a/WLFkysDbiOEQKIvP)
 [![hexlet-check](https://github.com/DvoVlad/java-project-61/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/DvoVlad/java-project-61/actions)
 
 Погрузитесь в экосистему Java, научитесь настраивать рабочее окружение. Подружитесь с Spotless (линтером и форматтером кода) и фреймворком для автоматизации сборки проектов Gradle. Поймёте, чем git отличается от GitHub, поработаете с внешними репозиториями. Получите опыт построения архитектуры полноценного приложения и написания чистого кода.
