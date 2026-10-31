@@ -1,4 +1,4 @@
-package hexlet.code;
+package hexlet.code.games;
 
 import java.util.Scanner;
 
@@ -14,7 +14,8 @@ public class Prime {
         System.out.println("Hello," + name);
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
         int score = 0;
-        while (score < 3) {
+        int countGamesScore = 3;
+        while (score < countGamesScore) {
             if (gameStep()) {
                 score++;
                 System.out.println("Correct!");
@@ -22,8 +23,8 @@ public class Prime {
                 break;
             }
         }
-        if (score == 3) {
-            System.out.println("Congratulations," + name);
+        if (score == countGamesScore) {
+            System.out.println("Congratulations, " + name);
         } else {
             System.out.println(
                     "'"

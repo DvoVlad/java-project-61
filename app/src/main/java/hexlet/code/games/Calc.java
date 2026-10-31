@@ -1,4 +1,4 @@
-package hexlet.code;
+package hexlet.code.games;
 
 import java.util.Scanner;
 
@@ -13,8 +13,9 @@ public class Calc {
         String name = scanner.nextLine();
         System.out.println("Hello," + name);
         System.out.println("What is the result of the expression?");
+        int countGamesScore = 3;
         int score = 0;
-        while (score < 3) {
+        while (score < countGamesScore) {
             if (gameStep()) {
                 score++;
                 System.out.println("Correct!");
@@ -22,8 +23,8 @@ public class Calc {
                 break;
             }
         }
-        if (score == 3) {
-            System.out.println("Congratulations," + name);
+        if (score == countGamesScore) {
+            System.out.println("Congratulations, " + name);
         } else {
             System.out.println(
                     "'"

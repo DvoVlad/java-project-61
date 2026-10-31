@@ -1,8 +1,8 @@
-package hexlet.code;
+package hexlet.code.games;
 
 import java.util.Scanner;
 
-public class Gcd {
+public class Even {
     private static String correctResult = "";
     private static String answer = "";
 
@@ -12,9 +12,10 @@ public class Gcd {
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
         System.out.println("Hello," + name);
-        System.out.println("Find the greatest common divisor of given numbers.");
+        System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
+        int countGamesScore = 3;
         int score = 0;
-        while (score < 3) {
+        while (score < countGamesScore) {
             if (gameStep()) {
                 score++;
                 System.out.println("Correct!");
@@ -22,37 +23,30 @@ public class Gcd {
                 break;
             }
         }
-        if (score == 3) {
-            System.out.println("Congratulations," + name);
+        if (score == countGamesScore) {
+            System.out.println("Congratulations, " + name);
         } else {
             System.out.println(
                     "'"
-                            + Gcd.answer
+                            + Even.answer
                             + "' is wrong answer ;(. Correct answer was '"
-                            + Gcd.correctResult
+                            + Even.correctResult
                             + "'.");
             System.out.println("Let's try again, " + name);
         }
     }
 
     public static boolean gameStep() {
-        int number1 = (int) (Math.random() * 100);
-        int number2 = (int) (Math.random() * 100);
-        System.out.println("Question: " + number1 + " " + number2);
-
+        int number = (int) (Math.random() * 100);
+        System.out.println("Question: " + number);
         Scanner scanner = new Scanner(System.in);
-        Gcd.answer = scanner.nextLine();
-        System.out.println("Your answer: " + Gcd.answer);
-        Gcd.correctResult = String.valueOf(Gcd.getGCD(number1, number2));
-        return Gcd.correctResult.equals(Gcd.answer);
+        Even.answer = scanner.nextLine();
+        Even.correctResult = isEven(number) ? "yes" : "no";
+        System.out.println("Your answer: " + answer);
+        return Even.correctResult.equals(Even.answer);
     }
 
-    public static int getGCD(int a, int b) {
-        while (b != 0) {
-            int tmp = a % b;
-            a = b;
-            b = tmp;
-        }
-        return Math.abs(a);
+    public static boolean isEven(int number) {
+        return number % 2 == 0;
     }
 }

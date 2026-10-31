@@ -1,4 +1,4 @@
-package hexlet.code;
+package hexlet.code.games;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -15,7 +15,8 @@ public class Progression {
         System.out.println("Hello," + name);
         System.out.println("What number is missing in the progression?");
         int score = 0;
-        while (score < 3) {
+        int countGamesScore = 3;
+        while (score < countGamesScore) {
             if (gameStep()) {
                 score++;
                 System.out.println("Correct!");
@@ -23,8 +24,8 @@ public class Progression {
                 break;
             }
         }
-        if (score == 3) {
-            System.out.println("Congratulations," + name);
+        if (score == countGamesScore) {
+            System.out.println("Congratulations, " + name);
         } else {
             System.out.println(
                     "'"
