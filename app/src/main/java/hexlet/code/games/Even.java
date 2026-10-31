@@ -24,7 +24,7 @@ public class Even {
             }
         }
         if (score == countGamesScore) {
-            System.out.println("Congratulations, " + name);
+            System.out.println("Congratulations, " + name + "!");
         } else {
             System.out.println(
                     "'"
@@ -32,7 +32,7 @@ public class Even {
                             + "' is wrong answer ;(. Correct answer was '"
                             + Even.correctResult
                             + "'.");
-            System.out.println("Let's try again, " + name);
+            System.out.println("Let's try again, " + name + "!");
         }
     }
 

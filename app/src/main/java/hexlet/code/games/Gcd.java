@@ -24,7 +24,7 @@ public class Gcd {
             }
         }
         if (score == countGamesScore) {
-            System.out.println("Congratulations, " + name);
+            System.out.println("Congratulations, " + name + "!");
         } else {
             System.out.println(
                     "'"
@@ -32,7 +32,7 @@ public class Gcd {
                             + "' is wrong answer ;(. Correct answer was '"
                             + Gcd.correctResult
                             + "'.");
-            System.out.println("Let's try again, " + name);
+            System.out.println("Let's try again, " + name + "!");
         }
     }
 

@@ -25,7 +25,7 @@ public class Progression {
             }
         }
         if (score == countGamesScore) {
-            System.out.println("Congratulations, " + name);
+            System.out.println("Congratulations, " + name + "!");
         } else {
             System.out.println(
                     "'"
@@ -33,7 +33,7 @@ public class Progression {
                             + "' is wrong answer ;(. Correct answer was '"
                             + Progression.correctResult
                             + "'.");
-            System.out.println("Let's try again, " + name);
+            System.out.println("Let's try again, " + name + "!");
         }
     }
 
