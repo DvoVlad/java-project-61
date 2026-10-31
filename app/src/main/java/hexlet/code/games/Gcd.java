@@ -11,7 +11,7 @@ public class Gcd {
         System.out.println("May I have your name?");
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
-        System.out.println("Hello," + name);
+        System.out.println("Hello, " + name);
         System.out.println("Find the greatest common divisor of given numbers.");
         int score = 0;
         int countGamesScore = 3;

@@ -11,7 +11,7 @@ public class Even {
         System.out.println("May I have your name?");
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
-        System.out.println("Hello," + name);
+        System.out.println("Hello, " + name);
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
         int countGamesScore = 3;
         int score = 0;

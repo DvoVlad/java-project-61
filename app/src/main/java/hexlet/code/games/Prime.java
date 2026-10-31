@@ -11,7 +11,7 @@ public class Prime {
         System.out.println("May I have your name?");
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
-        System.out.println("Hello," + name);
+        System.out.println("Hello, " + name);
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
         int score = 0;
         int countGamesScore = 3;

@@ -11,7 +11,7 @@ public class Calc {
         System.out.println("May I have your name?");
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
-        System.out.println("Hello," + name);
+        System.out.println("Hello, " + name);
         System.out.println("What is the result of the expression?");
         int countGamesScore = 3;
         int score = 0;

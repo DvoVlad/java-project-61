@@ -12,7 +12,7 @@ public class Progression {
         System.out.println("May I have your name?");
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
-        System.out.println("Hello," + name);
+        System.out.println("Hello, " + name);
         System.out.println("What number is missing in the progression?");
         int score = 0;
         int countGamesScore = 3;
