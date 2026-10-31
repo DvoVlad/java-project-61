@@ -16,8 +16,8 @@ public class App {
         System.out.println("6 - Prime");
         System.out.println("0 - Exit");
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Your choice:");
         String choice = scanner.nextLine();
-        System.out.println("Your choice: " + choice);
         System.out.println();
         switch (choice) {
             case "1":
