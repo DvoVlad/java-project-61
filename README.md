@@ -1,5 +1,5 @@
 # Игры разума (Java)
-[Ссылка на запись игры про четность](https://asciinema.org/a/TnQquDGKBaVcPZWO)
+[Ссылка на запись игры про четность](https://asciinema.org/a/zAPzNzrEWkhFPStF)
 [Ссылка на запись игры про счет](https://asciinema.org/a/SlW6QcUE3HATuF5i)
 [Ссылка на запись игры про НОД](https://asciinema.org/a/r29DXijRvqfvcren)
 [Ссылка на запись игры про прогрессию](https://asciinema.org/a/f2aGkI4nSB3PthI7)
